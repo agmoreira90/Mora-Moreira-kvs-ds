@@ -10,11 +10,11 @@ import com.mercadolibre.kvsclient.kvsapi.KvsapiConfiguration;
 
 import java.util.concurrent.RejectedExecutionException;
 
-public class UserRepository {
+public class UserKVSRepository {
     private KvsapiConfiguration config;
     private IQKVSContainerKvsClient client;
 
-    public UserRepository() {
+    public UserKVSRepository() {
         this.config = KvsapiConfiguration.builder().withMaxRetries(2).build();
         this.client = new QKVSContainerLowLevelClient(config, "KEY_VALUE_STORE_MY_CONTAINER_CONTAINER_NAME");
     }

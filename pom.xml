@@ -37,11 +37,21 @@
             <artifactId>kvsclient</artifactId>
             <version>0.4.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.mercadolibre</groupId>
+            <artifactId>dsclient</artifactId>
+            <version>2.2.4</version>
+        </dependency>
     </dependencies>
     <repositories>
         <repository>
             <id>arquitectura</id>
             <url>http://git.ml.com:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <id>arquitectura_grails</id>
+            <name>Nexus Arquitectura</name>
+            <url>http://git.ml.com:8081/nexus/content/repositories/MLGrailsPlugins</url>
         </repository>
     </repositories>
     <build>

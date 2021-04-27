@@ -14,4 +14,5 @@ public class UserDto {
     private String apellido;
     private String genero;
     private Date fechaNacimiento;
+    private String pais;
 }
